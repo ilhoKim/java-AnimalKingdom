@@ -9,13 +9,14 @@ public abstract class Animal {
 
     public Animal(String name, int yearNamed) {
         idNumber = maxId++;
+        this.idNumber = maxId;
         this.name = name;
         this.yearNamed = yearNamed;
     }
 
-    public abstract String getMove();
-    public abstract String getBreath();
-    public abstract String getReproduce();
+    public abstract String move();
+    public abstract String breath();
+    public abstract String reproduce();
 
     public String getName() {
         return name;
