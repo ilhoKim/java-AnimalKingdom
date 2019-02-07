@@ -17,4 +17,19 @@ public abstract class Animal {
     public abstract String getBreath();
     public abstract String getReproduce();
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getYearNamed() {
+        return yearNamed;
+    }
+
+    public void setYearNamed(int yearNamed) {
+        this.yearNamed = yearNamed;
+    }
 }
